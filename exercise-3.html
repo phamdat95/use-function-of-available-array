@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var inputText = window.prompt("enter your text: ").toString();
+    var upper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    var lower = 'abcdefghijklmnopqrstuvwxyz';
+    var result = [];
+    for (var i=0;i<inputText.length;i++){
+        if(upper.includes(inputText[i]))
+            result.push(inputText[i].toLowerCase());
+        else if(lower.includes(inputText[i]))
+            result.push(inputText[i].toUpperCase());
+        else result.push(inputText[i]);
+    }
+    document.write(result.join(''));
+</script>
+</body>
+</html>
